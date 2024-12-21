@@ -10,7 +10,7 @@
   "orientation": "any",
   "icons": [
       {
-          "src": "/data/logo.png",
+          "src": "/to-do-list-9-128.png", 
           "sizes": "1024x1024"
       }
   ]
