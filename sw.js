@@ -15,7 +15,9 @@ self.addEventListener("fetch", function(event) {
     checkResponse(event.request).catch(function() {
       return returnFromCache(event.request);
     })
-  );
+  );  
+
+  
   event.waitUntil(
     addToCache(event.request)
   );
