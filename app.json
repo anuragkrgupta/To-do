@@ -2,7 +2,7 @@
   "name": "To-Do",
   "short_name": "To-Do",
   "theme_color": "#DBC0E2",
-  "background_color": "#fffff",
+  "background_color": "#DBC0E2",
   "display": "standalone",
   "scope": "/",
   "start_url": "index.html",
@@ -11,21 +11,7 @@
   "icons": [
       {
           "src": "/data/logo.png",
-          "sizes": "1024x1024"
+          "sizes": "980x980"
       }
-  ],
-  "shortcuts": [
-    {
-      "name": "To-Do",
-      "short_name": "To-Do",
-      "description": "Open To-Do App",
-      "url": "/index.html",
-      "icons": [
-        {
-          "src": "/data/logo.png",
-          "sizes": "192x192"
-        }
-      ]
-    }
   ]
-}
+    }
