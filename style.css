@@ -6,16 +6,17 @@
 
 body {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(455deg, #b57edc, #f8f2e6);
+  background: linear-gradient(788deg, #DFCAC3, #CD5E78);
   text-align: center;
 }
 .box {
-  width: 450px;
+  width: 100vw;
   position: relative;
-  height: 550px;
+  height: 76vh;
   border-radius: 30px;
   box-shadow: -25px -25px 75px rgba(0, 0, 0, 0.25),
     -10px -10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
@@ -49,7 +50,7 @@ h1 {
 }
 
 .box li {
-  width: calc(100% -40px);
+  width: auto;
   position: relative;
   display: flex;
   background: #fffee0;
@@ -59,7 +60,7 @@ h1 {
   min-height: 45px;
   cursor: pointer;
   border-radius: 22.5px;
-  box-shadow: -5px -5px 7px rgba(0, 0, 0, 0.25),
+  box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.25),
     inset 2px 2px 5px rgba(225, 225, 225, 0.5),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
   color: black;
@@ -82,11 +83,11 @@ h1 {
   height: 30px;
   justify-content: center;
   align-items: center;
-  background: #ea738d;
+  background: rgb(196, 39, 39);
   border-radius: 50%;
-  box-shadow: -5px -5px 7px rgba(0, 0, 0, 0.25),
-    inset 2px 2px 5px rgba(225, 225, 225, 0.5),
-    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.25),
+  inset 0px 0px 8px rgba(225, 225, 225, 0.5),
+  inset 0px -3px 9px rgba(0, 0, 0, 0.5);
 }
 
 .box li i::before {
@@ -118,15 +119,16 @@ h1 {
   height: 30px;
   color: #fcf6f5;
   border-radius: 50%;
-  background: #caa3df;
+  background: #575757;
 }
 .box li.done::after {
   content: "";
   position: absolute;
   width: 12px;
   height: 5px;
-  left: 16px;
-  border-left: 3px solid #fff;
+  left: 15px;
+  top: 16px;
+  border-left: 3px solid #ffffff;
   border-bottom: 3px solid #fff;
   transform: rotate(315deg);
 }

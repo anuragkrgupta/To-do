@@ -1,8 +1,8 @@
 {
   "name": "To-Do",
   "short_name": "To-Do",
-  "theme_color": "#DBC0E2",
-  "background_color": "#DBC0E2",
+  "theme_color": "#CD5E78",
+  "background_color": "linear-gradient(788deg, #DFCAC3, #CD5E78)",
   "display": "standalone",
   "scope": "/",
   "start_url": "index.html",
