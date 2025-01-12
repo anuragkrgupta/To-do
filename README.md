@@ -36,7 +36,4 @@ Accountability: Regular reminders help you stay committed to your tasks.
 
 Sample img file of the UI
 
-![sample img1](https://github.com/user-attachments/assets/f4449e9f-92da-4009-9967-cc92222ec70c)
-
-
-![sample img2](https://github.com/user-attachments/assets/251148bd-21bf-4430-8f13-0a39bbfc4673)
+![sample img1](https://github.com/user-attachments/assets/f4449e9f-92da-4009-9967-cc92222ec70c)  ![sample img2](https://github.com/user-attachments/assets/251148bd-21bf-4430-8f13-0a39bbfc4673)
