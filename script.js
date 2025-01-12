@@ -77,50 +77,50 @@ inputbx.addEventListener("keyup", function (event) {
 });
 
 // Notification permission
-// Notification.requestPermission().then((result) => {
-//   console.log(result);
-// });
+Notification.requestPermission().then((result) => {
+  console.log(result);
+});
 
 // Function to ask notification permission
-// function askNotificationPermission() {
+function askNotificationPermission() {
   // Check if the browser supports notifications
-  // if (!("Notification" in window)) {
-  //   console.log("This browser does not support notifications.");
-  //   return;
-  // }
-  // Notification.requestPermission().then((permission) => {
+  if (!("Notification" in window)) {
+    console.log("This browser does not support notifications.");
+    return;
+  }
+  Notification.requestPermission().then((permission) => {
     // set the button to shown or hidden, depending on what the user answers
-//     notificationBtn.style.display = permission === "granted" ? "none" : "block";
-//   });
-// }
+    notificationBtn.style.display = permission === "granted" ? "none" : "block";
+  });
+}
 
 // Function to show notifications for not done tasks
-// function showNotifications() {
-//   const notDoneTasks = todoListValue.filter((task) => !task.done);
-//   notDoneTasks.forEach((task) => {
-//     const notification = new Notification("To do list", {
-//       body: `Task "${task.value}" is not done yet.`,
-//     });
-//     notification.addEventListener("close", function () {
-//       setTimeout(showNotifications, 2 * 60 * 60 * 1000); // 2 hours in milliseconds
-//     });
-//   });
-// }
+function showNotifications() {
+  const notDoneTasks = todoListValue.filter((task) => !task.done);
+  notDoneTasks.forEach((task) => {
+    const notification = new Notification("To do list", {
+      body: `Task "${task.value}" is not done yet.`,
+    });
+    notification.addEventListener("close", function () {
+      setTimeout(showNotifications, 2 * 60 * 60 * 1000); // 2 hours in milliseconds
+    });
+  });
+}
 
 // Event listener for visibility change
-// let lastActiveTime = new Date().getTime();
-// document.addEventListener("visibilitychange", () => {
-//   if (document.visibilityState === "visible") {
-//     const currentTime = new Date().getTime();
-//     const inactiveTime = currentTime - lastActiveTime;
-//     if (inactiveTime > 2 * 60 * 60 * 1000) {
-//       // 2 hours in milliseconds
-//       showNotifications();
-//     }
-//   } else {
-//     lastActiveTime = new Date().getTime();
-//   }
-// });
+let lastActiveTime = new Date().getTime();
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    const currentTime = new Date().getTime();
+    const inactiveTime = currentTime - lastActiveTime;
+    if (inactiveTime > 2 * 60 * 60 * 1000) {
+      // 2 hours in milliseconds
+      showNotifications();
+    }
+  } else {
+    lastActiveTime = new Date().getTime();
+  }
+});
 
 // Show notifications when the page loads
-// showNotifications();
+showNotifications();
